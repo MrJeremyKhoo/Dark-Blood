@@ -1,2 +1,2 @@
 # Dark-Blood
-add noise into github statistics
+Obfuscate github statistics
