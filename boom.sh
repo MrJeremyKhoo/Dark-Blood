@@ -2,12 +2,13 @@
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 #Random number whether to commit or not
 random_number=$(awk 'BEGIN{srand(); print int(rand()*2)}') 
-sleep $random_number
 
 if [[ $random_number == 1 ]]; then
 # Generate a random sleep duration between 0 and 1800 seconds (30 minutes)
 sleep_duration=$(awk 'BEGIN{srand(); print int(rand()*3600)}')
 echo "Sleeping for $sleep_duration seconds"
+
+sleep $sleep_duration
 
 # Generate a random number between 0 and 1
 
