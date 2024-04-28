@@ -1,7 +1,7 @@
 #!/bin/bash
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 #Random number whether to commit or not
-random_number=$(awk 'BEGIN{srand(); print int(rand()*5)}') 
+random_number=$(awk 'BEGIN{srand(); print int(rand()*2)}') 
 sleep $random_number
 
 if [[ $random_number == 1 ]]; then
